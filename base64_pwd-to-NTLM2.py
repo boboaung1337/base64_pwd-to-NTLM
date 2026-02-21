@@ -1,0 +1,6 @@
+from Crypto.Hash import MD4
+import base64
+
+base64_input  = "WITSKRtGahQFvL/iUmJfQbRIJ7S7GMW+nKUj+TlJ4YZJyZ6pjlp5caC78rC4oY6woKxe294/hPCCl6nL2NNWSmj6f1GlmFKvizvlABXVpLqIGbQvyZEbYhPr+twasnf4m+B0qmwj4fXUx8qQAy+cEIV8sd18ZvOLKet7259cIbXTV1lbO3gxIEmDDjMmgP6QD1GQDHnr4xxgwR5YKZC9CbK01db3SWlpPYxElx30MGwzMLtL17ccxmGYAMzqNq/R9ldEq/hC4WDJ3hGg4CVagcOuHOQPOJ6Nh0+x4CBE46CoshfID+3wyswFI/akytdBDVyNk1hj9KH4v/kizCPw6A=="
+
+print(MD4.new(base64.b64decode(base64_input)).hexdigest())
